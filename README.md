@@ -3,7 +3,7 @@ R Code in support of "Drought triggers and sustains overnight fires in North Ame
 
 This code uses active fire detection data from geostationary satellite images and terrestrial fire records to characterize the hourly fire diurnal cycle of each large fire (≥1000 Ha) and identify overnight burning events (OBEs, i.e., fire activity was detected during every nighttime hour in a single day within a known fire perimeter) in North America during the 2017-2020 period. The distribution, characteristics, and implications of OBEs are further analyzed. A systematic examination of fire weather metrics is conducted to assess underlying drivers and explore the prediction of OBEs.
 
-The scripts include the Data processing and algorithms and the analysis as shown in the workflow below. The source code for display items is also included. The datasets required for the code are listed in the data requirements and are all publicly available.
+The scripts include the data processing and algorithms and the analysis as shown in the workflow below. The source code for display items is also included. The datasets required for the code are listed in the data requirements and are all publicly available.
 
 ### Workflow
 #### 1. Data processing and algorithms
