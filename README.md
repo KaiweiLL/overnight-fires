@@ -20,6 +20,9 @@ The scripts include the data processing and algorithms and the analysis as shown
 - OBEs identification and fire weather feature calculation (Data processing and algorithms/06_OBEs identification and feature calculation.R)
   - OBEs and non-OBEs identification
   - Daytime and nighttime extremes of hourly fire weather and their range calculation
+- Cross-validation of GOES-based OBEs with LEO
+  - Overpasses reconstruction of LEO satellites - AQUA, TERRA, Suomi NPP
+  - Examine how frequently fire activity was observed by LEO with OBEs
 #### 2. Analysis
 - Spatiotemporal distribution and statistics of OBEs (including Figure 1; Analysis/01_distribution and statistics.R)
   - Fire with and without OBEs, total OBEs, OBEs by seasons and by fire classes 
@@ -27,18 +30,20 @@ The scripts include the data processing and algorithms and the analysis as shown
   - Number of days between ignition and the occurrence of the first OBE
   - Number of days between two adjacent OBEs in multi-OBE fires 
   - Fire size comparison and correlation with the number of OBEs
-- Fire weather comparison (including Figure 3a, 3b and Supplementary Figure S2, S3; Analysis/03_fire weather comparison.R)
-- Assessment of and increasing trend in fire weather extremes of OBEs (including Figure 3c and Supplementary Figure S4; Analysis/04_trend and extremes.R)
-- Importance analysis of fire weather variables (including Figure 4; Analysis/05_importance ML.R)
+- Fire weather comparison (including Figure 3a, 3b and Extended Data Figure 4, 5; Analysis/03_fire weather comparison.R)
+- Assessment of and increasing trend in fire weather extremes of OBEs (including Figure 3c and Extended Data Figure 6; Analysis/04_trend and extremes.R)
+- Importance analysis of fire weather variables (including Figure 4 and Extended Data Figure 6; Analysis/05_importance ML.R)
 - Prediction of OBEs (including Figure 5; Analysis/06_prediction LR.R)
 #### 3. Visualization
-- code for cases study and Supplementary Figure S5 and S6 (case_study_figs5_s6.R)
+- code for cases study and Extended Data Figure 3, 8 (case_study_figs5_s6.R)
 
 ### Data requirements
 - GOES active fire images (nc) from Amazon Web Service S3 Explorer 
-- Fire perimeters (shapefile) from NBAC and MTBS
-- Daily and hourly fire weather (nc)
-- Biome categorization (shapefile) 
+- Fire perimeters (shapefile) from NBAC, MTBS, and CWFP
+- ERA5-based Daily and hourly fire weather (nc)
+- Biome categorization (shapefile)
+- The MODIS GeoMeta and geoMetaVIIRS product (txt) for reconstructing overpasses
+- The MODIS and VIIRS active fire products (txt) from FIRMS 
 - Processed yearly GOES active fire summarization (csv)
 - Processed hourly fire diurnal cycle and hourly and daily fire weather combination (csv)
 - Processed OBEs and non-OBEs and fire weather feature (csv)
